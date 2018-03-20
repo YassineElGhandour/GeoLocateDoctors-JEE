@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+
+
+
+    <!-- ACCEUIL  -->
+    <servlet>
+        <servlet-name>Acceuil</servlet-name>
+        <servlet-class>com.projetjees3.servlets.Acceuil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Acceuil</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <!-- LOGIN -->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.projetjees3.servlets.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+        <servlet>
+        <servlet-name>profildoc2</servlet-name>
+        <servlet-class>com.projetjees3.servlets.profildoc2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>profildoc2</servlet-name>
+        <url-pattern>/profildoc2</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>simple</servlet-name>
+        <servlet-class>com.projetjees3.servlets.simpleresearchMark</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>simple</servlet-name>
+        <url-pattern>/simpleresearch2</url-pattern>
+    </servlet-mapping>
+    
+    <!-- LOGIN -->
+    <servlet>
+        <servlet-name>Ajout</servlet-name>
+        <servlet-class>com.projetjees3.servlets.AfterInscription</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ajout</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    
+    
+
+    <!-- S'inscrire -->
+    <servlet>
+        <servlet-name>Sinscrire</servlet-name>
+        <servlet-class>com.projetjees3.servlets.Sinscrire</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sinscrire</servlet-name>
+        <url-pattern>/sinscrire</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Recherche simple -->
+    <servlet>
+        <servlet-name>simpleResearch</servlet-name>
+        <servlet-class>com.projetjees3.servlets.simpleResearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>simpleResearch</servlet-name>
+        <url-pattern>/simpleresearch</url-pattern>
+    </servlet-mapping>
+    <!-- ajouter des recherches sur map -->
+    <servlet>
+        <servlet-name>AddMarkUser</servlet-name>
+        <servlet-class>com.projetjees3.servlets.AddMarkUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddMarkUser</servlet-name>
+        <url-pattern>/ajouterMarker</url-pattern>
+    </servlet-mapping>
+    <!-- Recherche détaillée -->
+    <servlet>
+        <servlet-name>detailedResearch</servlet-name>
+        <servlet-class>com.projetjees3.servlets.detailedResearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>detailedResearch</servlet-name>
+        <url-pattern>/detailedresearch</url-pattern>
+	</servlet-mapping>
+	
+	    <!-- Profile Doctorant -->
+    <servlet>
+        <servlet-name>ProfileDoc</servlet-name>
+        <servlet-class>com.projetjees3.servlets.ProfileDoc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileDoc</servlet-name>
+        <url-pattern>/profiledoc/*</url-pattern>
+    </servlet-mapping>
+	
+    
+    <!-- JSP CONFIG -->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config> 
+</web-app>
